@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Toolkit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎬 Media Toolkit</h1>
+
+  <section>
+    <h2>Video to Audio</h2>
+    <form id="video-to-audio" enctype="multipart/form-data">
+      <input type="file" name="video" required>
+      <button type="submit">Convert</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Audio Cutter</h2>
+    <form id="cut-audio" enctype="multipart/form-data">
+      <input type="file" name="audio" required>
+      <input type="text" name="start" placeholder="Start time (e.g. 00:00:05)" required>
+      <input type="text" name="duration" placeholder="Duration (e.g. 10)" required>
+      <button type="submit">Cut</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Video Cutter</h2>
+    <form id="cut-video" enctype="multipart/form-data">
+      <input type="file" name="video" required>
+      <input type="text" name="start" placeholder="Start time (e.g. 00:00:10)" required>
+      <input type="text" name="duration" placeholder="Duration (e.g. 15)" required>
+      <button type="submit">Cut</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
